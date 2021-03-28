@@ -106,7 +106,7 @@ prod-backup:
 	URL=http://167.172.248.37 make backup-all
 
 devnet-backup:
-	EPOCH=1 URL=http://157.230.15.42 make backup-all
+	EPOCH=1 URL=http://localhost make backup-all
 
 chron:
 	#get epoch from key_store.json
