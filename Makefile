@@ -103,10 +103,10 @@ restore-yaml:
 	cp ${ARCHIVE_PATH}/${EPOCH}/fullnode_template.node.yaml ${DATA_PATH}/node.yaml
 
 prod-backup:
-	URL=http://167.172.248.37 make backup-all
+	URL=http://167.172.248.37 make backup-all 
 
 devnet-backup:
-	EPOCH=1 URL=http://localhost make backup-all
+	EPOCH=1 URL=http://localhost make backup-all zip commit
 
 chron:
 	#get epoch from key_store.json
