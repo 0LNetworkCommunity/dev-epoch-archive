@@ -106,6 +106,7 @@ prod-backup:
 	URL=http://167.172.248.37 make backup-all 
 
 devnet-backup:
+	rm -rf 1*
 	EPOCH=1 URL=http://localhost make backup-all zip commit
 
 chron:
